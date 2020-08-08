@@ -8,7 +8,40 @@
     <title>Rock paper and scissors</title>
   </head>
   <body>
-    
+    <section class="game">
+<!--      SCORE SECTION-->
+      <div class="score flex-container">
+        <div class="player-score flex-container">
+          <h2>Player</h2>
+          <p>0</p>
+        </div>
+
+        <div class="computer-score flex-container">
+          <h2>Computer</h2>
+          <p>0</p>
+        </div>
+      </div>
+<!--      INTRO SECTION-->
+      <div class="intro flex-container">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <button>Hit it</button>
+      </div>
+<!--      MATCH SECTION-->
+      <div class="match flex-container">
+
+        <div class="hands">
+          <img class="player-hand" src="assets/rock.png" alt="">
+          <img class="computer-hand" src="assets/rock.png" alt="">
+        </div>
+        <h2 class="winner">Choose an option</h2>
+        <div class="options">
+          <button id="rock_button">Rock</button>
+          <button id="paper_button">Paper</button>
+          <button id="scissors_button">Scissors</button>
+        </div>
+      </div>
+
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
