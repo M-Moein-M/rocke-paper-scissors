@@ -1,3 +1,16 @@
+@keyframes shake-animation {
+    0%   {top:0px;}
+    50%  {top:-80px;}
+    100% {top:0px;}
+}
+
+.shake{
+    position: relative;
+    animation-name: shake-animation;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,42 +18,44 @@
 
 body {
     position: relative;
-    background-color: #b3daed;
+    background-color: #3b84ac;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.score.flex-container{
+.score.flex-container {
     flex-direction: row;
     justify-content: center;
     margin: 100px;
 }
-.intro.flex-container{
+
+.intro.flex-container {
     flex-direction: column;
     justify-content: center;
     margin: 150px 50px 50px;
 }
-.intro *{
+
+.intro * {
     margin: 20px;
 }
 
-.computer-score, .player-score{
-    margin: 10px 100px ;
+.computer-score, .player-score {
+    margin: 10px 100px;
 }
 
 .player-hand {
     -webkit-transform: scaleX(-1);
 }
 
-button{
-    padding: 10px 20px ;
-    background-color: #f17a7a;
+button {
+    padding: 10px 20px;
+    background-color: lightblue;
 }
 
-.hide{
+.hide {
     display: none;
 }

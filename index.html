@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./style.css"/>
     <title>Rock paper and scissors</title>
-  </head>
-  <body>
-    <section class="game">
-<!--      SCORE SECTION-->
-      <div class="score flex-container">
+</head>
+<body>
+<section class="game">
+    <!--      SCORE SECTION-->
+    <div class="score flex-container">
         <div class="player-score flex-container">
-          <h2>Player</h2>
-          <p>0</p>
+            <h2>Player</h2>
+            <p>0</p>
         </div>
 
         <div class="computer-score flex-container">
-          <h2>Computer</h2>
-          <p>0</p>
+            <h2>Computer</h2>
+            <p>0</p>
         </div>
-      </div>
-<!--      INTRO SECTION-->
-      <div class="intro flex-container">
+    </div>
+    <!--      INTRO SECTION-->
+    <div class="intro flex-container">
         <h1>ROCK PAPER SCISSORS</h1>
-        <button>Hit it</button>
-      </div>
-<!--      MATCH SECTION-->
-      <div class="match flex-container">
+        <button id="initiate_game">Hit it</button>
+    </div>
+    <!--      MATCH SECTION-->
+    <div class="match flex-container">
 
         <div class="hands">
-          <img class="player-hand" src="assets/rock.png" alt="">
-          <img class="computer-hand" src="assets/rock.png" alt="">
+            <img class="player-hand" src="assets/rock.png" alt="">
+            <img class="computer-hand" src="assets/rock.png" alt="">
         </div>
-        <h2 class="winner">Choose an option</h2>
+        <h2 class="winner options">Choose an option</h2>
         <div class="options">
-          <button id="rock_button">Rock</button>
-          <button id="paper_button">Paper</button>
-          <button id="scissors_button">Scissors</button>
-        </div>
-      </div>
 
-    </section>
-    <script src="app.js"></script>
-  </body>
+            <button class="options-button" id="rock_button">Rock</button>
+            <button class="options-button" id="paper_button">Paper</button>
+            <button class="options-button" id="scissors_button">Scissors</button>
+        </div>
+    </div>
+
+</section>
+<script src="app.js"></script>
+</body>
 </html>
