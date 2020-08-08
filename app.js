@@ -2,18 +2,18 @@ const scoreSection = document.getElementsByClassName('score')[0];
 const matchSection = document.getElementsByClassName('match')[0];
 const optionsElements = document.querySelectorAll('.options');
 
-var computerScore = 0;
-var playerScore = 0;
+let computerScore = 0;
+let playerScore = 0;
 
-var computerChoice; // shows the last choice by computer
-var playerChoice;  // shows the last choice by player
+let computerChoice; // shows the last choice by computer
+let playerChoice;  // shows the last choice by player
 
 hideElement(scoreSection);
 hideElement(matchSection);
 
 document.getElementById("initiate_game").addEventListener('click', beginGame);
 optionButtons = document.getElementsByClassName('options-button');
-for (var i = 0; i < optionButtons.length; i++) {
+for (let i = 0; i < optionButtons.length; i++) {
     optionButtons[i].addEventListener('click', optionClicked);
 }
 
@@ -22,7 +22,7 @@ function optionClicked() {
     changeHands2Rock();
 
     document.querySelector('.hands').classList.add('shake');
-    for (var item of optionsElements)
+    for (let item of optionsElements)
         hideElement(item);
 
     let animationTime = 900; // 900 is the duration that it takes to finish the shake animation
@@ -40,7 +40,7 @@ function optionClicked() {
     setTimeout(function () {
 
         document.querySelector('.hands').classList.remove('shake');
-        for (var item of optionsElements)
+        for (let item of optionsElements)
             showElement(item);
 
         changeHands();
