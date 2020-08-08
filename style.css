@@ -4,6 +4,11 @@
     100% {top:0px;}
 }
 
+#computer_score, #player_score{
+    font-weight: bold;
+    font-size: 300%;
+}
+
 .shake{
     position: relative;
     animation-name: shake-animation;
@@ -36,7 +41,7 @@ body {
 .intro.flex-container {
     flex-direction: column;
     justify-content: center;
-    margin: 150px 50px 50px;
+    margin: 50px 50px 50px;
 }
 
 .intro * {
